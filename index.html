@@ -30,8 +30,9 @@
               <input
                 type="text"
                 class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500"
-                placeholder="Name of the team "
+                placeholder="Name of the team members"
                 required
+                name="Name of the team members"
               />
             </div>
             <div>
@@ -39,6 +40,7 @@
                 class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500 my-8"
                 placeholder="Name of the Team Leader "
                 required
+                name="Name of the Team Leader"
               />
             </div>
             <div>
@@ -47,6 +49,7 @@
                 class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500 mb-8"
                 placeholder="Contact No. of team leader "
                 required
+                name="Contact No. of team leader"
               />
             </div>
             <div>
@@ -55,13 +58,13 @@
               >
               <div class="checkbox-container">
                 <label class="checkbox-label">
-                  <input type="checkbox" name="team-size-2" value="2" /> 2
+                  <input type="checkbox" name="team-size-2" value="" name="team-size=>2" /> 2
                 </label>
                 <label class="checkbox-label">
-                  <input type="checkbox" name="team-size-3" value="3" /> 3
+                  <input type="checkbox" name="team-size-3" value=""  name="team-size=>3"/> 3
                 </label>
                 <label class="checkbox-label">
-                  <input type="checkbox" name="team-size-4" value="4" /> 4
+                  <input type="checkbox" name="team-size-4" value="" name="team-size=>4" /> 4
                 </label>
               </div>
             </div>
@@ -72,11 +75,11 @@
               >
               <br />
               <select id="track" required>
-                <option value="" disabled selected>Select a track</option>
+                <option value="none" disabled selected>Select a track</option>
                 <option value=" Ed-Tech
                 ">1. Ed-Tech
               </option>
-                <option value="AgriTech">2. AgriTech
+                <option value="AgriTech" >2. AgriTech
                 </option>
                 <option value="HealthCare">3. HealthCare
                 </option>
@@ -88,7 +91,7 @@
               <input
                 type="text"
                 class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500"
-                placeholder="Prior Experience in Hackathon(optional) "
+                placeholder="Prior Experience in Hackathon(optional) " 
               />
             </div>
             <br />
@@ -110,7 +113,7 @@
             <button
               class="rounded-full p-3 w-full sm:w-56 bg-gradient-to-r from-sky-600 to-teal-300 text-white text-lg font-semibold"
               type="submit"
-              onclick="WA_Group()"
+              ondrag="WA_Group()"
             >
               Submit
             </button>
