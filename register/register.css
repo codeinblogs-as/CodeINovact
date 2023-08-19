@@ -24,3 +24,9 @@
     font-family: cursive;
     margin: auto auto;
 }
+
+@media only screen and (max-width: 600px) {
+.collab-banner{
+    display: none;
+}
+}
