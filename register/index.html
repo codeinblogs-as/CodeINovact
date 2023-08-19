@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeINovact Hackathon</title>
+    <link rel="stylesheet" href="./register.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="shortcut icon"
+      href="./logo/Favicon-icon.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div
+      class="w-full h-auto overflow-scroll block h-screen bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 p-4 flex items-center justify-center"
+    >
+      <div class="bg-white py-6 px-10 sm:max-w-md w-full">
+        <div class="collab-banner">
+          <img src="./logo/Inovact.png" alt="" />
+          <h1>X</h1>
+          <img src="./logo/codeinblogs.png" alt="" />
+        </div>
+
+        <div
+          class="sm:text-3xl text-2xl font-semibold text-center text-sky-600 mb-12"
+        >
+          CodeINovact Registration Form
+        </div>
+        <form action="https://formspree.io/f/mdorgoql" method="POST">
+          <div class="">
+            <div>
+              <input
+                type="text"
+                class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500"
+                placeholder="Name of the team members"
+                required
+                name="Name of the team members"
+              />
+            </div>
+            <div>
+              <input
+                class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500 my-8"
+                placeholder="Name of the Team Leader "
+                required
+                name="Name of the Team Leader"
+              />
+            </div>
+            <div>
+              <input
+                type="tel"
+                class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500 mb-8"
+                placeholder="Contact No. of team leader "
+                required
+                name="Contact No. of team leader"
+              />
+            </div>
+            <div>
+              <input
+                type="tel"
+                class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500 mb-8"
+                placeholder="Mail id of team leader "
+                required
+                name="Mail id of team leader"
+              />
+            </div>
+            <div>
+              <label class="pb-2 border-sky-400 placeholder-gray-500 mb-8"
+                >Team Size (2-4)</label
+              >
+              <div class="checkbox-container">
+                <label class="checkbox-label">
+                  <input
+                    type="checkbox"
+                    name="team-size-2"
+                    value=""
+                    name="team-size=>2"
+                  />
+                  2
+                </label>
+                <label class="checkbox-label">
+                  <input
+                    type="checkbox"
+                    name="team-size-3"
+                    value=""
+                    name="team-size=>3"
+                  />
+                  3
+                </label>
+                <label class="checkbox-label">
+                  <input
+                    type="checkbox"
+                    name="team-size-4"
+                    value=""
+                    name="team-size=>4"
+                  />
+                  4
+                </label>
+              </div>
+            </div>
+            <br />
+            <!-- <div>
+              <label class="pb-2 border-sky-400 placeholder-gray-500 mb-8"
+                >Choice of Track</label
+              >
+              <br />
+              <select id="track" required>
+                <option value="none" disabled selected>Select a track</option>
+                <option
+                  value=" Ed-Tech
+                " name="Edtech"
+                >
+                  1. Ed-Tech
+                </option>
+
+                <option value="Open to Inovation" name="open innovation">2. Open Innovation</option>
+              </select>
+            </div> -->
+            <div>
+              <label class="pb-2 border-sky-400 placeholder-gray-500 mb-8"
+                >Choose a Track</label
+              >
+              <div class="checkbox-container">
+                <label class="checkbox-label">
+                  <input
+                    type="radio"
+                    value=""
+                    name="Ed-Tech"
+                  />
+                  1) Ed-Tech
+                </label>
+                <label class="checkbox-label">
+                  <input
+                    type="radio"
+                    value=""
+                    name=" Open to Innovation"
+                  />
+                 2) Open to Innovation
+                </label>
+                
+              </div>
+            </div>
+            <br />
+            <div>
+              <input
+                type="text"
+                class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500"
+                placeholder="Prior Experience in Hackathon(optional) "
+              />
+            </div>
+            <br />
+
+            <div class="flex">
+              <input
+                type="checkbox"
+                class="border-sky-400"
+                value="confirmation"
+                required
+              />
+              <div class="px-3 text-gray-500">
+                I confirm that I have filled out all the required information
+                accurately and completely
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center my-6">
+            <button
+              class="rounded-full p-3 w-full sm:w-56 bg-gradient-to-r from-sky-600 to-teal-300 text-white text-lg font-semibold"
+              type="submit"
+              ondrag="WA_Group()"
+            >
+              Submit
+            </button>
+          </div>
+          <div class="px-3 text-gray-500">
+            After clicking the "Submit" button, you will be redirected to the
+            WhatsApp group. Please join for enhanced communication.
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      const WA_Group = () => {
+        window.open("https://chat.whatsapp.com/GClxUdUctuaEUeWmJmNYHo");
+      };
+    </script>
+  </body>
+</html>
