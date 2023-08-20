@@ -1,6 +1,7 @@
+
 .collab-banner {
     /* padding-top: 10%; */
-    margin-top: 100px;
+    margin-top: 250px;
     background: linear-gradient(-45deg, #05062d 50%, #0011ff 50%);
     width: 100%;
     height: 150px;
@@ -31,5 +32,8 @@
 }
 .hide-mobile{
     display: none;
+}
+.body{
+    margin-top: 225px;
 }
 }
